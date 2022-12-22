@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #08064A;
+}
+.box{
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    border: 2px solid #00dfc4;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+h2{
+    color: #00dfc4;
+}
+.forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 14px;
+}
+.inputBox{
+    width: 250px;
+    position: relative;
+}
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    background-color: #08064A;
+    color: #00dfc4;
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    border-radius: 6px;
+    outline: none;
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255, 0.25);
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-6px);
+    font-size: 0.70em;
+    padding: 0 10px;
+    background-color: #08064A;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+.inputBox input:valid,
+.inputBox input:focus{
+    border: 1px solid #00dfc4;
+}
+.genderBox{
+    width: 250px;
+    display: flex;
+    margin: 0 auto;
+    gap: 6px;
+    padding-bottom: 20px;
+}
+.genderBox span{
+    color: rgb(255, 255, 255, 0.25);
+    padding: 8Npx 14px;
+    font-size: 1.2em;
+}
+.genderBox .gender{
+    width: 140px;
+    height: 36px;
+    color: #00dfc4;
+    background-color: rgb(255, 255, 255, 0.25);
+    border: none;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+
+.inputButton{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    width: 100px;
+    height: 40px;
+    font-size: 1em;
+    background-color: #00dfc4;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}

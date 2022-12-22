@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <section class="box" id="box">
+      <div class="info">
+        <h2>Registration form</h2>
+      </div>
+      <div class="forms">
+        <div class="inputBox">
+          <input type="text" name="name" id="name" required="required" />
+          <span>first name</span>
+        </div>
+        <div class="inputBox">
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            required="required"
+          />
+          <span>last name</span>
+        </div>
+        <div class="inputBox">
+          <input type="mail" name="mail" id="mail" required="required" />
+          <span>Email</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" name="number" id="number" required="required" />
+          <span>phone number</span>
+        </div>
+      </div>
+      <div class="genderBox">
+        <span>Gender :</span>
+        <select name="gender" class="gender" id="gender">
+          <option style="display: none"></option>
+          <option value="man">Man</option>
+          <option value="female">Female</option>
+          <option value="nottosay">Rather not to say</option>
+        </select>
+      </div>
+      <div class="inputButton">
+        <button type="button" class="button" onclick="alert('Welcome <3')">
+          Sign up
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
